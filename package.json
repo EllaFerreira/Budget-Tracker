@@ -1,0 +1,20 @@
+{
+  "name": "budget-tracker",
+  "version": "1.0.0",
+  "description": "``` AS AN avid traveller I WANT to be able to track my withdrawals and deposits with or without a data/internet connection SO THAT my account balance is accurate when I am traveling",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EllaFerreira/Budget-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EllaFerreira/Budget-Tracker/issues"
+  },
+  "homepage": "https://github.com/EllaFerreira/Budget-Tracker#readme"
+}
