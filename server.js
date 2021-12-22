@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 
 const PORT = 3000;
+const uri = process.env.MONGODB_URI;
 
 const app = express();
 
@@ -16,12 +17,12 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// mongoose.connect("mongodb://localhost/budgettracker", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useCreateIndex: true,
-//   useFindAndModify: false,
-// });
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+});
 
 // routes
 app.use(require("./routes/api.js"));
